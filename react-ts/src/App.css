@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.click {
+  @apply cursor-pointer select-none
+}
+
+.inherit {
+  @apply w-full h-full
+}
