@@ -1,4 +1,5 @@
 import request from ".";
+import type { Personalized } from "./Home.d";
 
 /**
  * 获取首页轮播图
@@ -15,9 +16,9 @@ export function getBanner(type: number = 0) {
 /**
  * 获取推荐歌单
  * @param limit 取出数量，默认为 10
- * @returns Promise
+ * @returns Promise<Personalized>
  */
-export function getPersonalized(limit: number = 10) {
+export function getPersonalized(limit: number = 10):Promise<Personalized> {
     return request({
         url: '/personalized',
         method: 'get',
