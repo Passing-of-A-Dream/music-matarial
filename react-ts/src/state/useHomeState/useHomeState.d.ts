@@ -1,3 +1,5 @@
+import type {PersonalizedResult} from "@/api/Home.d";
+
 export interface Banners {
     imageUrl:           string;
     targetId:           number;
@@ -18,5 +20,7 @@ export interface HomeState {
     menuChiose: string,
     menuSelect: (router: string) => void,
     banners: Banners[],
-    setBanners: (banners: Banners[]) => void
+    setBanners: (banners: Banners[]) => void,
+    recomPlayList: PersonalizedResult | [],
+    setRecomPlayList: (recomPlayList: PersonalizedResult) => void
 }

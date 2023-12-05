@@ -5,7 +5,7 @@ import * as React from "react"
 import AutorenewOutlinedIcon from '@mui/icons-material/AutorenewOutlined';
 import type {PersonalizedResult} from "@/api/Home.d";
 
-export default function Main() {
+export default function PlayList() {
     const {palette, shape} = useTheme()
     // hooks
     React.useEffect(() => {
@@ -49,7 +49,7 @@ export default function Main() {
     }
 
     return (
-        <div className="w-full px-8">
+        <div className="w-full px-8 pb-4">
             <Box className={'flex item-center'}>
                 <Typography variant="h5" mb={2}>推荐歌单</Typography>
                 <Box aria-owns={open ? 'mouse-over-popover' : undefined}
@@ -64,7 +64,7 @@ export default function Main() {
                     <span className={'opacity-0 w-0 block h-0'}>刷新歌单</span>
                 </Box>
             </Box>
-            <Grid2 container spacing={3} columns={10}>
+            <Grid2 container spacing={1.5} columns={10}>
                 {personalized?.map((item, index: number) => {
                     return (
                         <Grid2 key={index} xs={2}>
@@ -89,7 +89,7 @@ export default function Main() {
                                     }}/>
                                 {/* <img src={item.picUrl} alt="" /> */}
                                 {/* <p>{item.name}</p> */}
-                                <CardContent sx={{padding: 1}}>
+                                <CardContent sx={{padding: 2}}>
                                     {/* <Box>
                                         <img src={item.picUrl} alt="" />
                                     </Box> */}

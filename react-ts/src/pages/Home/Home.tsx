@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import PlayList from "./components/RecomPlayList";
+import NewSong from "./components/NewSong";
 
 export default function Home() {
 
@@ -10,7 +11,8 @@ export default function Home() {
                 <Header />
             </Box>
             <Box className="mt-10">
-                <Main />
+                <PlayList />
+                <NewSong />
             </Box>
         </div>
     )

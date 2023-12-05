@@ -21,6 +21,10 @@ const useHomeState = proxy<HomeState>({
     banners: JSON.parse(localStorage.getItem('banners') || '[]'),
     setBanners: (banners) => {
         useHomeState.banners = banners
+    },
+    recomPlayList: [],
+    setRecomPlayList: (recomPlayList) => {
+        useHomeState.recomPlayList = recomPlayList
     }
 })
 

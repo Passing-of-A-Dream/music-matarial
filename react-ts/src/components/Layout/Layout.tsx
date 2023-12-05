@@ -51,7 +51,7 @@ export default function Layout(_props: IProps) {
         color: theme.palette.violet.contrastText
     }
     const leftStyle: React.CSSProperties = {
-        backgroundColor: mode === 'light' ? alpha(theme.palette.violet.main, 0.1) : theme.palette.violet.dark,
+        backgroundColor: mode === 'light' ? alpha(theme.palette.violet.main, theme.palette.action.hoverOpacity) : theme.palette.violet.dark,
     }
 
     return (
