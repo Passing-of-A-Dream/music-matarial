@@ -12,13 +12,6 @@ export interface Banners {
     bannerBizType:      string;
 }
 export interface HomeState {
-    menu: {
-        router: string,
-        name: string
-    }[],
-    mode: 'light' | 'dark',
-    menuChiose: string,
-    menuSelect: (router: string) => void,
     banners: Banners[],
     setBanners: (banners: Banners[]) => void,
     recomPlayList: PersonalizedResult | [],

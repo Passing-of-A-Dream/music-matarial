@@ -1,13 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 import './App.css'
 import Layout from './components/Layout/Layout';
-import useHomeState from '@/state/useHomeState/useHomeState';
 import { useSnapshot } from 'valtio';
 import { useEffect } from 'react';
+import globaVarlot from './state/globaVarlot/globaVarlot';
+import 'bytemd/dist/index.css'
 
 function App() {
   const navigate = useNavigate()
-  const snap = useSnapshot(useHomeState)
+  const snap = useSnapshot(globaVarlot)
   useEffect(() => {
     navigate(snap.menuChiose)
   }, [snap.menuChiose])

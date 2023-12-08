@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const request = axios.create({
-    baseURL: 'http://localhost:3000',
+    // baseURL: 'http://localhost:3000',
+    baseURL: '/api',
     timeout: 5000,
     // 允许跨域
     withCredentials: true

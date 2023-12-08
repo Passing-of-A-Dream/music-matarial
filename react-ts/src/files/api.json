@@ -1,0 +1,26 @@
+{
+    "ApiBaseUrl": "http://localhost:3000",
+    "HOME": {
+        "banner": {
+            "method": "GET",
+            "url": "/banner",
+            "params": {
+                "type": 0
+            }
+        },
+        "personalized": {
+            "method": "GET",
+            "url": "/personalized",
+            "params": {
+                "limit": 10
+            }
+        },
+        "personalizedNewsong": {
+            "method": "GET",
+            "url": "/personalized/newsong",
+            "params": {
+                "limit": 10
+            }
+        }
+    }
+}
